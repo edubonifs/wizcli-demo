@@ -15,6 +15,7 @@ permissions:
 jobs:
   Wiz-Directory-Scan:
     runs-on: ubuntu-latest
+    environment: wiz-integration
     env:
       WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
       WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
