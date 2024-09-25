@@ -27,7 +27,7 @@ jobs:
         run: curl -o wizcli https://wizcli.app.wiz.io/latest/wizcli && chmod +x wizcli
 
       - name: Authenticate to Wiz
-        run: ./wizcli auth
+        run: ./wizcli auth --id $WIZ_CLIENT_ID --secret $WIZ_CLIENT_SECRET
 
       - name: Run Wiz CLI Directory Scan
         run: |-
